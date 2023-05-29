@@ -1,0 +1,36 @@
+.animation-container {
+    font-family: 'Comme', sans-serif;
+    position: absolute;
+    top: 55%;
+    right: 50%;
+    z-index: 1;
+    transform: translate(50%, -50%);
+    width: 100%;
+}
+
+.text-animation {
+    overflow: hidden;
+
+}
+
+.target {
+    font-weight: bolder;
+    font-size: 60px;
+    color: #fbfbfb;
+    animation: slide-in 3.5s linear infinite; /* Adjust the animation duration */
+    white-space: nowrap; /* Prevent line breaks */
+    margin-right: auto; /* Push the text to the right side */
+}
+
+.arrow-btn{
+    margin-right: 120px;
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(calc(-100% + 160px)); /* Update the translation value */
+    }
+}

@@ -1,0 +1,97 @@
+.preloader{
+    height: 100vh;
+    width: 100%;
+    background: #000;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 55;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-size: 20px;
+}
+
+p{
+    font-size: 20px;
+    color: #444;
+}
+
+/***** Global Slide *****/
+.slide-right, .slide-left {
+    width: 100%;
+}
+
+/***** Slide Right *****/
+.slide-right {
+    animation: 3s slide-right;
+    color: white;
+    font-size: 15px;
+}
+@keyframes slide-right {
+    from {
+        margin-left: -100%;
+    }
+    to {
+        margin-left: 0%;
+    }
+}
+
+/***** Slide Left *****/
+.slide-left {
+    animation: 3s slide-left;
+    color: white;
+    font-size: 15px;
+}
+@keyframes slide-left {
+    from {
+        margin-left: 100%;
+    }
+    to {
+        margin-left: 0%;
+    }
+}
+
+/***** Slide Top *****/
+.slide-top {
+    animation: ease-in-out 3s slide-top;
+    color: white;
+    font-size: 15px;
+}
+@keyframes slide-top {
+    from {
+        margin-top: 100%;
+    }
+    to {
+        margin-top: 0;
+    }
+}
+
+/***** Misc Styles *****/
+.container {
+    width:100%;
+    margin: auto;
+    padding: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 25px #000;
+    margin-top: 30px;
+    text-align: center;
+    position: absolute;
+    top: 50%; right: 50%;
+    transform: translate(50%,-50%);
+}
+
+.text-container{
+    background: black;
+    color: white;
+}
+
+
+body {
+    background: #e2e2e2;
+}
+
+
